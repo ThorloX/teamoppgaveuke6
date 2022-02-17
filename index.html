@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SoundBoard Gruppe5</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<style></style>
+	<body>
+		<div id="app"></div>
+		<script>
+			let htmlDiv;
+			htmlDiv = document.getElementById("app");
+			//Model
+			let instruments = [
+				"/fluteAlert.mp3",
+				"/movieSynth.mp3",
+				"/wrongBass.mp3",
+				"/horse.wav",
+				"/dog.wav",
+				"/growl.wav",
+				"/1.mp3",
+				"/2.mp3",
+				"/3.mp3",
+				"/4.mp3",
+				"/5.mp3",
+				"/6.mp3",
+				"/7.mp3",
+				"/8.mp3",
+			];
+			//View
+			view();
+			function view() {
+				let html = ""; /*HTML*/
+				for (let i = 0; i < instruments.length; i++) {
+					html += `
+					<button class="buttonStyle${i}" onclick="playSound(${i})"> DJ. ${i}</button>
+			 		`;
+				}
+				htmlDiv.innerHTML = html;
+			}
+			function playSound(lyd) {
+				let sjekkLyd = new Audio(instruments[lyd]);
+				sjekkLyd.play();
+			}
+		</script>
+	</body>
+</html>

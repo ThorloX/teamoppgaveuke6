@@ -1,0 +1,51 @@
+body {
+	background: linear-gradient(#111, #112);
+	margin: 20px;
+}
+
+button {
+	font-size: 50px;
+	margin: 20px;
+}
+
+button:hover {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+	background-color: red;
+}
+
+.buttonStyle0,
+.buttonStyle1,
+.buttonStyle2,
+.buttonStyle3,
+.buttonStyle4,
+.buttonStyle5,
+.buttonStyle6,
+.buttonStyle7,
+.buttonStyle8,
+.buttonStyle9,
+.buttonStyle10,
+.buttonStyle11,
+.buttonStyle12,
+.buttonStyle13 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 35px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+		5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 10rem;
+	height: 10rem;
+	background-color: gray;
+	margin: 5px;
+}
